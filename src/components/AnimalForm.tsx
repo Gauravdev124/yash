@@ -85,7 +85,7 @@ const AnimalForm: React.FC<AnimalFormProps> = ({ onSubmit, initialData }) => {
 
     
       
-      <TouchableOpacity style={{backgroundColor:"#2E369980",width: mobileW * 35/ 100,borderRadius:mobileW*3/100,bottom:15,alignSelf:"center",
+      <TouchableOpacity style={{backgroundColor:"#2E369980",width: mobileW * 50/ 100,borderRadius:mobileW*3/100,bottom:15,alignSelf:"center",
          height: mobileW * 12/ 100,justifyContent:"center",padding:mobileW*3/100,marginTop:mobileW*5/100}}  onPress={()=>handleSelectImages()}>
         <Text style={{color:"white",fontSize:mobileW*4/100,textAlign:"center",}}>Add Images at the time edit     </Text>
       </TouchableOpacity>
@@ -100,7 +100,7 @@ const AnimalForm: React.FC<AnimalFormProps> = ({ onSubmit, initialData }) => {
 const styles = StyleSheet.create({
   container: { padding: 16 },
   input: { borderBottomWidth: 1, marginBottom: 12, padding: 8 },
-  thumbnail: { width: 100, height: 100, marginHorizontal: 4 },
+  thumbnail: { width: 100, height: 100, marginHorizontal: 4,margintop:mobileW*5/100 },
 });
 
 export default AnimalForm;
